@@ -1,0 +1,13 @@
+sudo: false
+
+language: java
+
+jdk:
+  - oraclejdk7
+  
+install:
+ - mvn install
+
+cache:
+  directories:
+  - $HOME/.m2
