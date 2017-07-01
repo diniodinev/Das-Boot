@@ -21,7 +21,8 @@ cache:
 branches:
   only:
     - master
-    - dev
+    - feature/spring-boot-properties
+
    
 notifications:
   email: false
