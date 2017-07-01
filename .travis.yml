@@ -22,3 +22,6 @@ branches:
   only:
     - master
     - dev
+os:
+ - linux
+ - osx
