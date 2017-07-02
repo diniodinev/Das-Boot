@@ -21,7 +21,7 @@ cache:
 branches:
   only:
     - master
-    - feature/spring-boot-properties
+    - /^feature.*$/
 
    
 notifications:
