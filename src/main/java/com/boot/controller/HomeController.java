@@ -20,6 +20,11 @@ public class HomeController {
     @Autowired
     ShipwrackRepository repository;
     
+    @RequestMapping(method = RequestMethod.GET)
+    public String home() {
+        return "This is Spring boot application.";
+    }
+    
     @RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.GET)
     public Shipwreck get(@PathVariable long id) {
         return repository.findOne(id);
